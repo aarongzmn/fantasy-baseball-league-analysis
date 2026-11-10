@@ -106,11 +106,6 @@
 <body>
   <main class="container">
     <header>
-      <div class="badges">
-        <span class="badge">Personal / Single-League Tool</span>
-        <span class="badge">Read-Only (fspt-r)</span>
-        <span class="badge">Non-Commercial</span>
-      </div>
       <h1>Fantasy Baseball League Analysis</h1>
       <p class="subtitle">
         A private, non-commercial MLB fantasy baseball companion dashboard built for personal and single-league analysis.
@@ -130,13 +125,12 @@
     <section>
       <h2>Yahoo Fantasy Sports API Usage</h2>
       <p>
-        This application uses <strong>Yahoo OAuth 2.0</strong> strictly with <strong>Read-Only (<code>fspt-r</code>)</strong> permissions:
+        This application uses <strong>Yahoo OAuth 2.0</strong> strictly with <strong>Read-Only</strong> permissions:
       </p>
       <ul>
         <li><strong>League Discovery &amp; Settings:</strong> Reading MLB league configuration, roster positions, and scoring categories (<code>/users;use_login=1/games;game_codes=mlb/leagues</code>, <code>/league/{league_key}/settings</code>).</li>
         <li><strong>Standings &amp; Matchups:</strong> Viewing current league standings and weekly head-to-head matchup scoreboards (<code>/standings</code>, <code>/scoreboard</code>).</li>
         <li><strong>Rosters &amp; Player Availability:</strong> Reading team rosters, injury designations, and league player ownership status (<code>/team/{team_key}/roster</code>, <code>/league/{league_key}/players</code>, <code>/transactions</code>).</li>
-        <li><strong>Low Request Volume &amp; Read-Only:</strong> Responses are cached server-side to minimize API requests. The application performs <strong>no write operations</strong> and no automated transactions.</li>
       </ul>
     </section>
 
@@ -149,7 +143,7 @@
     </section>
 
     <footer>
-      Maintained by <a href="https://github.com/aarongzmn" rel="noopener noreferrer">@aarongzmn</a> &bull; Private Single-League MLB Analytics Project
+      Maintained by <a href="https://github.com/aarongzmn" rel="noopener noreferrer">@aarongzmn</a> &bull; Private MLB Analytics Project
     </footer>
   </main>
 </body>
